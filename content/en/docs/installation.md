@@ -4,6 +4,7 @@ weight: 1
 ---
 
 ## Default installation with manifests
+
 To obtain a default installation without Prometheus alerting interlock
 or Slack notifications:
 
@@ -19,7 +20,6 @@ edit it in accordance with the following section before application.
 
 Kured also provides its own helm-chart. Detailed instructions and documentation can be found [here](https://github.com/kubereboot/charts/tree/main/charts/kured).
 
-
 ## Kubernetes & OS Compatibility
 
 The daemon image contains versions of `k8s.io/client-go` and
@@ -30,7 +30,7 @@ server:
 
 | kured  | {k8s.io/,}kubectl | k8s.io/client-go | k8s.io/apimachinery | expected kubernetes compatibility |
 | ------ | ----------------- | ---------------- | ------------------- | --------------------------------- |
-| 1.16.1 | 0.29.9            | v0.29.9          | v0.29.9             | 1.28.x, 1.29.x, 1.30.x            |
+| 1.16.2 | 0.29.9            | v0.29.9          | v0.29.9             | 1.28.x, 1.29.x, 1.30.x            |
 | 1.15.1 | 0.28.8            | v0.28.8          | v0.28.8             | 1.27.x, 1.28.x, 1.29.x            |
 | 1.14.2 | 0.27.6            | v0.27.6          | v0.27.6             | 1.26.x, 1.27.x, 1.28.x            |
 | 1.13.2 | 0.26.7            | v0.26.7          | v0.26.7             | 1.25.x, 1.26.x, 1.27.x            |
